@@ -1,0 +1,38 @@
+﻿алг
+нач
+цел x, y, xe, xd, xs, xt, ye, yd, ys
+вывод "введите числа: "
+ввод x, y
+
+цел first, second
+first := x
+second := y
+
+xe := mod(x, 10)
+x := div(x, 10)
+xd := mod(x, 10)
+x := div(x, 10)
+xs := mod(x, 10)
+x := div(x, 10)
+xt := mod(x, 10)
+
+ye := mod(y, 10)
+y := div(y, 10)
+yd := mod(y, 10)
+y := div(y, 10)
+ys := mod(y, 10)
+
+цел px
+px := xe * xd * xs * xt
+
+цел py
+py := ye * yd * ys
+
+если px > py 
+то
+вывод "число с наиб произв цифр: ", first, " ", px
+иначе 
+вывод "число с наиб произв цифр: ", second, " ", py
+всё
+кон
+
